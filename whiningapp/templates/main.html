@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Whining With Aaron</title>
+</head>
+<body>
+<div class="row">
+    <div class="col-xs-18 col-lg-12 bootcards-cards">
+        <div class="panel panel-default bootcards-richtext">
+
+            <div class="panel-heading">
+                <h1 class="panel-title">Wine Review</h1>
+            </div>
+
+                <p>* = required field</p>
+
+                <div class="row">
+                    <div class="col-md-6 bootcards-cards">
+                        <div class="panel panel-default bootcards-richtext">
+                            <div class="panel-heading">
+                                <h2 class="panel-title">Wine Information</h2>
+                            </div>
+                            <div class="panel-body">
+                                {{ form.wine_color.label }}
+                                {{ form.wine_color(size=30)  }}
+
+                                {{ form.wine_sweetness.label }}
+                                {{ form.wine_sweetness(size=30) }}
+
+                                {{ form.wine_type.label }}
+                                {{ form.wine_type(size=30) }}
+
+                                {{ form.wine_name.label }}
+                                {{ form.wine_name(size=30) }}
+
+                                {{ form.wine_vintage.label }}
+                                {{ form.wine_vintage(size=30) }}
+
+                                {{ form.wine_country.label }}
+                                {{ form.wine_country(size=30) }}
+
+                                {{ form.wine_state.label }}
+                                {{ form.wine_state(size=30) }}
+
+                                {{ form.wine_vineyard.label }}
+                                {{ form.wine_vineyard(size=30) }}
+
+                                {{ form.wine_taste.label }}
+                                {{ form.wine_taste(size=30) }}
+
+                                {{ form.wine_comments.label }}
+                                {{ form.wine_comments }}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
