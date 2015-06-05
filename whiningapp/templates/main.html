@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootcards-desktop.min.css') }}">
+
 <html>
 <head lang="en">
     <meta charset="UTF-8">
@@ -22,11 +25,11 @@
                                 <h2 class="panel-title">Wine Information</h2>
                             </div>
                             <div class="panel-body">
-                                {{ form.wine_color.label }}
-                                {{ form.wine_color }}
+                                {{ form.color_selector.label }}
+                                {{ form.color_selector }}
 
-                                {{ form.wine_sweetness.label }}
-                                {{ form.wine_sweetness }}
+                                {{ form.sweetness_selector.label }}
+                                {{ form.sweetness_selector }}
 
                                 {{ form.wine_type.label }}
                                 {{ form.wine_type }}
@@ -46,8 +49,8 @@
                                 {{ form.wine_vineyard.label }}
                                 {{ form.wine_vineyard }}
 
-                                {{ form.wine_taste.label }}
-                                {{ form.wine_taste }}
+                                {{ form.taste_selector.label }}
+                                {{ form.taste_selector }}
 
                                 {{ form.wine_comments.label }}
                                 {{ form.wine_comments }}
