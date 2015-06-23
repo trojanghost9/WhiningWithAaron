@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootcards-desktop.min.css') }}">
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/bootcards-desktop.css') }}">
 
 <html>
 <head lang="en">
@@ -9,7 +9,7 @@
 </head>
 <body>
 <div class="row">
-    <div class="col-xs-18 col-lg-12 bootcards-cards">
+    <div>
         <div class="panel panel-default bootcards-richtext">
 
             <div class="panel-heading">
@@ -24,36 +24,40 @@
                             <div class="panel-heading">
                                 <h2 class="panel-title">Wine Information</h2>
                             </div>
-                            <div class="panel-body">
+                            <div class="panel-default">
                                 {{ form.color_selector.label }}
                                 {{ form.color_selector }}
 
                                 {{ form.sweetness_selector.label }}
-                                {{ form.sweetness_selector }}
+                                {{ form.sweetness_selector }}</br>
 
                                 {{ form.wine_type.label }}
-                                {{ form.wine_type }}
+                                {{ form.wine_type }}</br>
 
                                 {{ form.wine_name.label }}
-                                {{ form.wine_name }}
+                                {{ form.wine_name }}</br>
 
                                 {{ form.wine_vintage.label }}
-                                {{ form.wine_vintage }}
+                                {{ form.wine_vintage }}</br>
 
                                 {{ form.wine_country.label }}
-                                {{ form.wine_country }}
+                                {{ form.wine_country }}</br>
 
                                 {{ form.wine_state.label }}
-                                {{ form.wine_state }}
+                                {{ form.wine_state }}</br>
 
                                 {{ form.wine_vineyard.label }}
-                                {{ form.wine_vineyard }}
+                                {{ form.wine_vineyard }}</br>
 
                                 {{ form.taste_selector.label }}
-                                {{ form.taste_selector }}
+                                {{ form.taste_selector }}</br>
 
                                 {{ form.wine_comments.label }}
-                                {{ form.wine_comments }}
+                                {{ form.wine_comments }}</br>
+
+                            </div>
+                            <div class="panel-footer">
+                                {{ form.submit }}
                             </div>
                         </div>
                     </div>
